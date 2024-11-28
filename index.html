@@ -1,0 +1,860 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Liquor Store</title>
+    <link rel="stylesheet" href="./css/Style.css" />
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <link rel="stylesheet" href="./css//bootstrap.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="icon" type="image/jpg" href="./Images/canva-f4o7eHrtGho.jpg">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+ 
+    
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+      integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- animation link for website -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="main">
+      <div class="Top">
+        <div class="container">
+          <div class="tops">
+            <div class="top_left">
+              <a href="#" class="text-decoration-none mx-2 text-light"
+                ><i class="fa-solid fa-phone"></i> +00 1234 567</a
+              >
+              <a href="#" class="text-decoration-none mx-2 text-light"
+                ><i class="fa-solid fa-paper-plane"></i> youremail@email.com</a
+              >
+            </div>
+            <div class="top_right">
+              <i class="fa-brands fa-facebook-f text-light mx-2"></i>
+              <i class="fa-brands fa-twitter text-light mx-2"></i>
+              <i class="fa-brands fa-instagram text-light mx-2"></i>
+              <i class="fa-solid fa-globe text-light mx-2"></i>
+              <a href="#" class="text-decoration-none mx-2 ms-5 text-light">
+                Sign up</a
+              >
+              <a href="#" class="text-decoration-none mx-2 text-light">login</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="navigation" id="navBar">
+      <div class="container">
+        
+        <nav>
+          <div class="logo">
+            <a href="#" class="text-decoration-none"id="logo"
+              >Liquor <span>store</span>
+            </a>
+          </div>
+          <div class="nav_item">
+            <ul class="nav_ul" id="nav_ul">
+              <li class="for_nav_hover mx-3 fs-5">
+                <a href="./" class="text-decoration-none" id="home">Home</a>
+              </li>
+              <li class="for_nav_hover mx-3 fs-5" id="about">About</li>
+              <div class="dropdown" id="dropdown">
+                <li
+                  class="for_nav_hover dropdown-toggle fs-5"
+                  type="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  product
+                </li>
+                <ul class="dropdown-menu p-3">
+                  <li class="dropdown-item" id="products">products</li>
+                  <li class="dropdown-item" id="single_product">single products</li>
+                  <li class="dropdown-item" id="cart">cart</li>
+                  <li class="dropdown-item" id="checkout" >checkout</li>
+                </ul>
+              </div>
+              <li class="for_nav_hover mx-3 fs-5" id="blog">Blog</li>
+              <li class="for_nav_hover mx-3 fs-5" id="contact">Contact</li>
+              <div class="mx-3 fs-5">
+                <div class="dropdown">
+                  <a
+                    class="btn  fs-5"
+                    href="#"
+                    role="button"
+                    id="dropdownMenuLink"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                  <i class="fa-solid fa-bag-shopping drop_a" id="Drop_cart"></i>
+                  </a>
+                
+                  <div class="dropdown-menu mt-4" aria-labelledby="dropdownMenuLink">
+                     <div class="dropdown-item">
+                      <div class="list">
+                        <img src="./Images/prod-1.jpg.webp" alt="">
+                          <div class="list_name">
+                            <h5>bacardi 151</h5>
+                            <p>$25.99 <span class="text-dark opacity-75 ms-4 mb-1">quantity: 01</span></p>
+                          </div>
+                      </div>
+                     </div>
+                     <div class="dropdown-item">
+                      <div class="list">
+                        <img src="./Images/prod-2.jpg.webp" alt="">
+                          <div class="list_name">
+                            <h5>
+                              Jim Beam Kentucky <br>Straight</h5>
+                            <p>$30.89 <span class="text-dark opacity-75 ms-4 mb-1">quantity: 02</span></p>
+                          </div>
+                      </div>
+                     </div>
+                     <div class="dropdown-item">
+                      <div class="list">
+                        <img src="./Images/prod-3.jpg.webp" alt="">
+                          <div class="list_name">
+                            <h5>Citadelle</h5>
+                            <p>$22.49 <span class="text-dark opacity-75 ms-4 mb-1">quantity: 01</span></p>
+                          </div>
+                      </div>
+                     </div>
+                     <div class="view_all" id="ViewAll">
+                       <button>view all</button>
+
+                     </div>
+
+                     </div>
+                     </div>
+                    </div>
+                  </div>
+                  <div class="toogle" id="toogle">
+                    <i class="fa-solid fa-bars"></i>
+                  </div>
+        </nav>
+        
+      </div>
+      
+    </div>
+      <div class="Slider">
+        <div id="slide_content">
+          <div class="slide_content text-focus-in">
+            <h1 class="slide_heading ">
+              Good <span>Drink</span> For Good <br />
+              <span>Moments</span>.
+            </h1>
+            <button class="shop_btn">shop now</button>
+            <button class="read_btn">Read more</button>
+          </div>
+        </div>
+      </div>
+      <div class="intro">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-4">
+              <div class="first_intro">
+                <div class="intro_icon">
+                  <i class="fa-solid fa-headset"></i>
+                </div>
+                <div class="intro-content">
+                  <h4>Online support 24/7</h4>
+                  <p>
+                    A small river named Duden flows by their place and supplies
+                    it with the necessary regelialia.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="first_intro" style="background-color: #ab4227">
+                <div class="intro_icon">
+                  <i class="fa-solid fa-money-check-dollar"></i>
+                </div>
+                <div class="intro-content">
+                  <h4>money back guarantee</h4>
+                  <p>
+                    A small river named Duden flows by their place and supplies
+                    it with the necessary regelialia.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="first_intro" style="background-color: #a23f25">
+                <div class="intro_icon">
+                  <i class="fa-solid fa-van-shuttle"></i>
+                </div>
+                <div class="intro-content">
+                  <h4>free shippin <br>& return</h4>
+                  <p>
+                    A small river named Duden flows by their place and supplies
+                    it with the necessary regelialia.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="Navigation_js">
+        <div class="experience" id="exp_pointer">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="about_img">
+                  <img
+                    src="./Images/about.jpg.webp"
+                    alt="imgs"
+                    class="img-fluid"
+                  />
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="intro-txt">
+                  <p class="since_p">since 1905</p>
+                  <h1>desire meets a new test</h1>
+                  <p class="lh-lg opacity-75">
+                    A small river named Duden flows by their place and supplies
+                    it with the necessary regelialia. It is a paradisematic
+                    country, in which roasted parts of sentences fly into your
+                    mouth.
+                  </p>
+                  <p class="lh-lg opacity-75">
+                    On her way she met a copy. The copy warned the Little Blind
+                    Text, that where it came from it would have been rewritten a
+                    thousand times and everything that was left from its origin
+                    would be the word "and" and the Little Blind Text should
+                    turn around and return to its own, safe country.
+                  </p>
+                  <h2>
+                    <span id="experience" class="ex_year">115</span> years of
+                    experience in business.
+                  </h2>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="brands">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-2 col-md-4 col-sm-4 my-2">
+                <div class="brand-content" data-aos="fade-up" data-aos-duration="800" >
+                  <div class="for_img">
+                    <img src="./Images/kind-1.jpg.webp" alt="img not found" />
+                  </div>
+                  <h4 class="py-2">brandy</h4>
+                </div>
+              </div>
+              <div class="col-lg-2 col-md-4 col-sm-4 my-2 ">
+                <div class="brand-content"  data-aos="fade-up" data-aos-duration="1000">
+                  <div class="for_img">
+                    <img src="./Images/kind-2.jpg.webp" alt="img not found" />
+                  </div>
+                  <h4 class="py-2">gin</h4>
+                </div>
+              </div>
+              <div class="col-lg-2 col-md-4 col-sm-4 my-2">
+                <div class="brand-content"  data-aos="fade-up" data-aos-duration="1200">
+                  <div class="for_img">
+                    <img src="./Images/kind-3.jpg.webp" alt="img not found" />
+                  </div>
+                  <h4 class="py-2">rum</h4>
+                </div>
+              </div>
+              <div class="col-lg-2 col-md-4 col-sm-4 my-2">
+                <div class="brand-content"  data-aos="fade-up" data-aos-duration="1400">
+                  <div class="for_img">
+                    <img src="./Images/kind-4.jpg.webp" alt="img not found" />
+                  </div>
+                  <h4 class="py-2">tequila</h4>
+                </div>
+              </div>
+              <div class="col-lg-2 col-md-4 col-sm-4 my-2">
+                <div class="brand-content"  data-aos="fade-up" data-aos-duration="1600">
+                  <div class="for_img">
+                    <img src="./Images/kind-5.jpg.webp" alt="img not found" />
+                  </div>
+                  <h4 class="py-2">vodka</h4>
+                </div>
+              </div>
+              <div class="col-lg-2 col-md-4 col-sm-4 my-2">
+                <div class="brand-content" data-aos="fade-up" data-aos-duration="1800">
+                  <div class="for_img">
+                    <img src="./Images/kind-6.jpg.webp" alt="img not found" />
+                  </div>
+                  <h4 class="py-2">whisky</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="products text-center"   data-aos="fade-up" data-aos-duration="1000">
+          <div class="container">
+            <div class="row">
+              <div class="heading_product">
+                <p class="since_p">our delightful offerings</p>
+                <h1>tastefully your's</h1>
+              </div>
+              <div class="col-lg-3 col-md-6">
+                <div class="product_img">
+                  <div class="pr_img">
+                    <img src="./Images/prod-1.jpg.webp" alt="" />
+                  </div>
+                  <div class="hover_product">
+                    <a href="#"><i class="fa-solid fa-bag-shopping"></i></a>
+                    <a href="#"><i class="fa-regular fa-heart"></i></a>
+                    <a href="#"><i class="fa-solid fa-eye"></i></a>
+                  </div>
+                </div>
+
+                <div class="details">
+                  <span class="text-light p-1 px-3 sales">sale</span>
+                  <p class="since_p">brandy</p>
+                  <h4>bacardi 151</h4>
+                  <p><span class="sale_price">$69.00</span> $49.00</p>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6">
+                <div class="product_img">
+                  <div class="pr_img">
+                    <img src="./Images/prod-2.jpg.webp" alt="" />
+                  </div>
+                  <div class="hover_product">
+                    <a href="#"><i class="fa-solid fa-bag-shopping"></i></a>
+                    <a href="#"><i class="fa-regular fa-heart"></i></a>
+                    <a href="#"><i class="fa-solid fa-eye"></i></a>
+                  </div>
+                </div>
+                <div class="details">
+                  <span class="text-light py-1 px-1 bg-warning sales"
+                    >best seller</span
+                  >
+                  <p class="since_p">gin</p>
+                  <h4>Jim Beam Kentucky Straight</h4>
+                  <p>$69.00</p>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6">
+                <div class="product_img">
+                  <div class="pr_img">
+                    <img src="./Images/prod-3.jpg.webp" alt="" />
+                  </div>
+                  <div class="hover_product">
+                    <a href="#"><i class="fa-solid fa-bag-shopping"></i></a>
+                    <a href="#"><i class="fa-regular fa-heart"></i></a>
+                    <a href="#"><i class="fa-solid fa-eye"></i></a>
+                  </div>
+                </div>
+                <div class="details">
+                  <span class="text-light py-1 bg-success sales"
+                    >new arrivals</span
+                  >
+                  <p class="since_p">rum</p>
+                  <h4>Citadelle</h4>
+                  <p>$69.00</p>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6">
+                <div class="product_img">
+                  <div class="pr_img">
+                    <img src="./Images/prod-4.jpg.webp" alt="" />
+                  </div>
+                  <div class="hover_product">
+                    <a href="#"><i class="fa-solid fa-bag-shopping"></i></a>
+                    <a href="#"><i class="fa-regular fa-heart"></i></a>
+                    <a href="#"><i class="fa-solid fa-eye"></i></a>
+                  </div>
+                </div>
+                <div class="details">
+                  <p class="since_p">rum</p>
+                  <h4>The Glenlivet</h4>
+                  <p>$69.00</p>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6">
+                <div class="product_img">
+                  <div class="pr_img">
+                    <img src="./Images/prod-5.jpg.webp" alt="" />
+                  </div>
+                  <div class="hover_product">
+                    <a href="#"><i class="fa-solid fa-bag-shopping"></i></a>
+                    <a href="#"><i class="fa-regular fa-heart"></i></a>
+                    <a href="#"><i class="fa-solid fa-eye"></i></a>
+                  </div>
+                </div>
+                <div class="details">
+                  <p class="since_p">rum</p>
+                  <h4>The Glenlivet</h4>
+                  <p>$69.00</p>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6">
+                <div class="product_img">
+                  <div class="pr_img">
+                    <img src="./Images/prod-6.jpg.webp" alt="" />
+                  </div>
+                  <div class="hover_product">
+                    <a href="#"><i class="fa-solid fa-bag-shopping"></i></a>
+                    <a href="#"><i class="fa-regular fa-heart"></i></a>
+                    <a href="#"><i class="fa-solid fa-eye"></i></a>
+                  </div>
+                </div>
+                <div class="details">
+                  <p class="since_p">rum</p>
+                  <h4>The Glenlivet</h4>
+                  <p>$69.00</p>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6">
+                <div class="product_img">
+                  <div class="pr_img">
+                    <img src="./Images/prod-7.jpg.webp" alt="" />
+                  </div>
+                  <div class="hover_product">
+                    <a href="#"><i class="fa-solid fa-bag-shopping"></i></a>
+                    <a href="#"><i class="fa-regular fa-heart"></i></a>
+                    <a href="#"><i class="fa-solid fa-eye"></i></a>
+                  </div>
+                </div>
+                <div class="details">
+                  <p class="since_p">rum</p>
+                  <h4>The Glenlivet</h4>
+                  <p>$69.00</p>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6">
+                <div class="product_img">
+                  <div class="pr_img">
+                    <img src="./Images/prod-8.jpg.webp" alt="" />
+                  </div>
+                  <div class="hover_product">
+                    <a href="#"><i class="fa-solid fa-bag-shopping"></i></a>
+                    <a href="#"><i class="fa-regular fa-heart"></i></a>
+                    <a href="#"><i class="fa-solid fa-eye"></i></a>
+                  </div>
+                </div>
+                <div class="details">
+                  <p class="since_p">rum</p>
+                  <h4>The Glenlivet</h4>
+                  <p>$69.00</p>
+                </div>
+              </div>
+              <div class="all_product">
+
+                <button href="./" class="d-flex  justify-content-center rounded" id="All_product">view all products
+                  <i class="fa-solid fa-arrow-right-long px-4 fs-4"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial text-center">
+          <div class="container">
+            <div class="testimonial_heading">
+              <p>testimonial</p>
+              <h1>happy clients</h1>
+            </div>
+            <div class="owl-carousel owl-theme">
+              <div class="item">
+                <div class="carsoule_item">
+                  <p class="opacity-75">
+                    Far far away, behind the word mountains, far from the
+                    countries Vokalia and Consonantia, there live the blind
+                    texts.
+                  </p>
+                  <div class="user">
+                    <div class="user_img">
+                      <img src="./Images/person_3.jpg.webp" alt="imgs" />
+                    </div>
+                    <div class="user-name">
+                      <h5>Roger scott</h5>
+                      <p class="opacity-75">marketing manager</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="carsoule_item">
+                  <p class="opacity-75">
+                    Far far away, behind the word mountains, far from the
+                    countries Vokalia and Consonantia, there live the blind
+                    texts.
+                  </p>
+                  <div class="user">
+                    <div class="user_img">
+                      <img src="./Images/person_2.jpg.webp" alt="imgs" />
+                    </div>
+                    <div class="user-name">
+                      <h5>Roger scott</h5>
+                      <p class="opacity-75">marketing manager</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="carsoule_item">
+                  <p class="opacity-75">
+                    Far far away, behind the word mountains, far from the
+                    countries Vokalia and Consonantia, there live the blind
+                    texts.
+                  </p>
+                  <div class="user">
+                    <div class="user_img">
+                      <img src="./Images/person_1.jpg.webp" alt="imgs" />
+                    </div>
+                    <div class="user-name">
+                      <h5>Roger scott</h5>
+                      <p class="opacity-75">marketing manager</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="carsoule_item">
+                  <p class="opacity-75">
+                    Far far away, behind the word mountains, far from the
+                    countries Vokalia and Consonantia, there live the blind
+                    texts.
+                  </p>
+                  <div class="user">
+                    <div class="user_img">
+                      <img src="./Images/person_3.jpg.webp" alt="imgs" />
+                    </div>
+                    <div class="user-name">
+                      <h5>Roger scott</h5>
+                      <p class="opacity-75">marketing manager</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="carsoule_item">
+                  <p class="opacity-75">
+                    Far far away, behind the word mountains, far from the
+                    countries Vokalia and Consonantia, there live the blind
+                    texts.
+                  </p>
+                  <div class="user">
+                    <div class="user_img">
+                      <img src="./Images/person_1.jpg.webp" alt="imgs" />
+                    </div>
+                    <div class="user-name">
+                      <h5>Roger scott</h5>
+                      <p class="opacity-75">marketing manager</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="carsoule_item">
+                  <p class="opacity-75">
+                    Far far away, behind the word mountains, far from the
+                    countries Vokalia and Consonantia, there live the blind
+                    texts.
+                  </p>
+                  <div class="user">
+                    <div class="user_img">
+                      <img src="./Images/person_2.jpg.webp" alt="imgs" />
+                    </div>
+                    <div class="user-name">
+                      <h5>Roger scott</h5>
+                      <p class="opacity-75">marketing manager</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="overlay"></div>
+        </div>
+        <!--=====================blogs=======================-->
+        <div class="blogs">
+          <div class="container">
+            <div class="row">
+              <div class="blog_heading text-center">
+                <p>blog</p>
+                <h1>recent blog</h1>
+              </div>
+              <div class="col-lg-6">
+                <div class="blog1">
+                  <div class="blog_img1">
+                    <a href="#"></a>
+                  </div>
+                  <div class="blog_content">
+                    <p class="mb-3">
+                      <i class="fa-solid fa-calendar-days"></i>23 april 2021
+                    </p>
+                    <h5 class="mb-4">the recipe from winemaker's restaurant</h5>
+                    <p>
+                      A small river named Duden flows by their place and
+                      supplies it with the necessary regelialia.
+                    </p>
+                    <a href="*"
+                      >continue<i
+                        class="mx-2 fs-5 fa-solid fa-arrow-right-long"
+                      ></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="blog1">
+                  <div class="blog_img2">
+                    <a href="#"></a>
+                  </div>
+                  <div class="blog_content">
+                    <p class="mb-3">
+                      <i class="fa-solid fa-calendar-days"></i>23 april 2021
+                    </p>
+                    <h5 class="mb-4">the recipe from winemaker's restaurant</h5>
+                    <p>
+                      A small river named Duden flows by their place and
+                      supplies it with the necessary regelialia.
+                    </p>
+                    <a href="*"
+                      >continue<i
+                        class="mx-2 fs-5 fa-solid fa-arrow-right-long"
+                      ></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="blog1">
+                  <div class="blog_img3">
+                    <a href="#"></a>
+                  </div>
+                  <div class="blog_content">
+                    <p class="mb-3">
+                      <i class="fa-solid fa-calendar-days"></i>23 april 2021
+                    </p>
+                    <h5 class="mb-4">the recipe from winemaker's restaurant</h5>
+                    <p>
+                      A small river named Duden flows by their place and
+                      supplies it with the necessary regelialia.
+                    </p>
+                    <a href="*"
+                      >continue<i
+                        class="mx-2 fs-5 fa-solid fa-arrow-right-long"
+                      ></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="blog1">
+                  <div class="blog_img4">
+                    <a href="#"></a>
+                  </div>
+                  <div class="blog_content">
+                    <p class="mb-3">
+                      <i class="fa-solid fa-calendar-days"></i>23 april 2021
+                    </p>
+                    <h5 class="mb-4">the recipe from winemaker's restaurant</h5>
+                    <p>
+                      A small river named Duden flows by their place and
+                      supplies it with the necessary regelialia.
+                    </p>
+                    <a href="*"
+                      >continue<i
+                        class="mx-2 fs-5 fa-solid fa-arrow-right-long"
+                      ></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md">
+            <div class="foot">
+              <h3 class="mb-4">liquor<span class="opacity-50"> store</span></h3>
+              <p class="mt-5">
+                Far far away, behind the word mountains, far from the countries.
+              </p>
+              <div class="foot_icon" data-aos="fade-up" data-aos-duration="1200">
+                <i class="fa-brands fa-twitter p-3"></i>
+                <i class="fa-brands fa-facebook-f p-3 px-3"></i>
+                <i class="fa-brands fa-instagram p-3"></i>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md">
+            <ul class="for_foot_link">
+              <h3>my account</h3>
+              <li>
+                <a href="#"
+                  ><i class="fa-solid fa-angle-right mx-2"></i> my account</a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><i class="fa-solid fa-angle-right mx-2"></i>register</a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><i class="fa-solid fa-angle-right mx-2"></i>log in</a
+                >
+              </li>
+              <li>
+                <a href="#" 
+
+                  ><i class="fa-solid fa-angle-right mx-2"></i> my order</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-sm-12 col-md">
+            <ul class="for_foot_link">
+              <h3>information</h3>
+              <li>
+                <a href="#"
+                  ><i class="fa-solid fa-angle-right mx-2"></i>about us</a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><i class="fa-solid fa-angle-right mx-2"></i>catlog</a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><i class="fa-solid fa-angle-right mx-2"></i>contact us</a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><i class="fa-solid fa-angle-right mx-2"></i>term &
+                  condition</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-sm-12 col-md">
+            <ul class="for_foot_link">
+              <h3>quick lines</h3>
+              <li>
+                <a href="#"
+                  ><i class="fa-solid fa-angle-right mx-2"></i>new user</a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><i class="fa-solid fa-angle-right mx-2"></i>help center</a
+                >
+              </li>
+              <li>
+                <a href="#" class="w-100"
+                  ><i class="fa-solid fa-angle-right mx-2"></i>report spam</a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><i class="fa-solid fa-angle-right mx-2"></i>faq's</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-sm-12 col-md">
+            <div class="foot_contact">
+              <ul>
+                <h3>have a question</h3>
+                <li>
+                  <a href="#">
+                    <i class="fa-regular fa-map"></i>203 Fake St. Mountain View,
+                    San Francisco, California, USA
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="fa-solid fa-phone me-4"></i> +2 392 3929 210
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="fa-solid fa-paper-plane me-4"></i>info@yarn.com
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    
+    <!-- Load jQuery first -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <!-- Load Owl Carousel after jQuery -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    
+    <!--====================css animation  liberary==================-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
+
+
+    <!-- Load FontAwesome and Bootstrap and outer links -->
+    <script src="./js/script.js"></script>
+    <script src="./js/all.min.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+
+    <script>
+      $(document).ready(function () {
+        $(".owl-carousel").owlCarousel({
+          loop: true,
+          margin: 20,
+          nav: true,
+          autoplay: true,
+          autoplayTimeout: 3000,
+          animateOut: "slideOutDown",
+          animateIn: "flipInX",
+          smartSpeed: 450,
+          responsive: {
+            0: {
+              items: 1,
+            },
+            600: {
+              items: 2,
+            },
+            1000: {
+              items: 3,
+            },
+          },
+        });
+      });
+    </script>
+  </body>
+</html>
